@@ -3,10 +3,6 @@ import * as api from '../api/index';
 
 const useCountryFinder = (borders:string[] | undefined) => {
     const [countryAlphaCode, setCountryAlpahCode] = useState<string[]>([]);
-    console.log("from useCountryFinder borders  ", borders)
-    console.log("from useCountryFinder", countryAlphaCode);
-
-
 
     useEffect(()=>{
         setCountryAlpahCode([]);
